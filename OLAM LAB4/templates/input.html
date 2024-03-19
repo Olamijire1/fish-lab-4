@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input and Result</title>
+</head>
+<body>
+
+    <h2>Enter Number:</h2>
+    <form id="myForm" action="/result" method="post">
+        <label for="Length1">Length1:</label><br>
+        <input type="text" id="Length1" name="Length1"><br>
+        <label for="Length2">Length2:</label><br>
+        <input type="text" id="Length2" name="Length2"><br>
+        <label for="Length3">Length3:</label><br>
+        <input type="text" id="Length3" name="Length3"><br>
+        <label for="Height">Height:</label><br>
+        <input type="text" id="Height" name="Height"><br>
+        <label for="Width">Width:</label><br>
+        <input type="text" id="Width" name="Width"><br>
+        <input type="submit" value="Submit">
+    </form>    
+
+    <h2>Result:</h2>
+    <div id="result"></div>
+
+    <script>
+        function calculate() {
+            var inputNumber = document.getElementById('inputNumber').value;
+            var resultDiv = document.getElementById('result');
+
+
+            var result = inputNumber * 2;
+
+            resultDiv.innerHTML = "Result: " + result;
+        }
+    </script>
+
+</body>
+</html>
+
